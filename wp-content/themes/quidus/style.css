@@ -2782,12 +2782,20 @@ padding-top: 1.5em;
 	display:block;
 	bottom:0;
 	border-top:1px solid rgba(60,60,60,0.2);
+	background: url(img/bg-footer.jpg);
 	background-color: #000;
+	height: 70px;
 }
 
 .site-info {
 	margin: 5px 0px 0px 0px;
-	color: #fff;
+	color: #000;
+}
+
+.site-info a,
+.site-info a:hover
+{
+	color: #000;
 }
 
 .site-info a {
@@ -3099,6 +3107,7 @@ p > video {
 	width: 100%;
 	height: 30px;
 	background-color: #BFBFBF;
+	background: url(img/bg-redes.jpg);
 }
 
 .bg-content {
