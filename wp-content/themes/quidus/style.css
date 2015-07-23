@@ -55,6 +55,66 @@ Text Domain: quidus
  * and Blueprint http://www.blueprintcss.org/
  */
 
+@charset "UTF-8";
+
+@font-face {
+  font-family: "untitled-font-1";
+  src:url("fonts/untitled-font-1.eot");
+  src:url("fonts/untitled-font-1.eot?#iefix") format("embedded-opentype"),
+    url("fonts/untitled-font-1.woff") format("woff"),
+    url("fonts/untitled-font-1.ttf") format("truetype"),
+    url("fonts/untitled-font-1.svg#untitled-font-1") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "untitled-font-1" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "untitled-font-1" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-instagram:before {
+  content: "c";
+}
+.icon-youtube-square:before {
+  content: "d";
+}
+.icon-twitter-square:before {
+  content: "a";
+}
+.icon-social-facebook:before {
+  content: "b";
+}
+.icon-web:before {
+  content: "e";
+}
+.icon-social-vimeo:before {
+  content: "f";
+}
+
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
 	border: 0;
 	font-family: inherit;
@@ -1464,7 +1524,23 @@ margin-right:0.5em;
 .image-navigation .nav-next:not(:empty) {
 margin-left:0.5em;
 }
-
+.social ul{
+	margin: 0;
+	padding: 0;
+}
+.social ul li{
+	display: inline-block;
+	list-style: none;
+	padding: 7px;
+}
+.social a{
+	color: #5A5A5A;
+	font-size: 30px;
+}
+.social a:hover{
+	text-decoration: none;
+	color: #898989;
+}
 
 /**
  * Accessibility
@@ -3107,11 +3183,16 @@ p > video {
 
 .social {
 	width: 100%;
-	height: 30px;
+	height: 40px;
 	background-color: #BFBFBF;
 	background: url(img/bg-redes.jpg);
+	
 }
-
+.redes{
+	width: 84%;
+	margin: 0 auto;
+	text-align: right;
+}
 .bg-content {
 	background-image: url(img/fondo.jpg);
 	background-size: 100%;
@@ -4954,6 +5035,9 @@ p > video {
 		max-width:1280px;
 		margin: 0px auto;
 	}
+	.redes{
+		width: 96%;
+	}
 
 	.sidebar {}
 
@@ -5214,6 +5298,9 @@ p > video {
     }
 
 	.sidebar {}
+	.redes{
+		width: 960px;
+	}
 }
 
 @media screen and (min-width: 1220px) and (max-width:86.6875em) {
@@ -5227,6 +5314,9 @@ p > video {
     }
 
 	.sidebar {}
+	.redes{
+		width: 960px;
+	}
 }
 
 /**
@@ -5242,6 +5332,9 @@ p > video {
     #page {
         width: 960px;
     }
+    .redes{
+		width: 960px;
+	}
 
 	.sidebar {}
 }

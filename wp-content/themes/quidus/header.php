@@ -36,7 +36,14 @@
 		</a>
 	</div>
 	<div class="social">
-		
+		<div class="redes">
+			<ul>
+				<li><a href="http://twitter.com/telemedellin" target="_blank" class="icon" data-icon="a"></a></li>
+				<li><a href="http://fb.com/telemedellin.tv" target="_blank" class="icon" data-icon="b"></a></li>
+				<li><a href="http://instagram.com/telemedellin" target="_blank" class="icon" data-icon="c"></a></li>
+				<li><a href="https://www.youtube.com/user/telemedellin" target="_blank" class="icon" data-icon="d"></a></li>
+			</ul>
+		</div>
 	</div>
 </header>
 <div class="bg-content">
