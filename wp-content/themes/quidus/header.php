@@ -31,7 +31,9 @@
 <body <?php body_class(); ?>>
 <header>
 	<div class="logo">
-		<img class="logo-img">
+		<a href="<?php echo get_option( 'siteurl' ); ?>">
+			<img class="logo-img" src="<?php echo get_option( 'siteurl' ); ?>/wp-content/themes/quidus/img/cabezote.png">
+		</a>
 	</div>
 	<div class="social">
 		

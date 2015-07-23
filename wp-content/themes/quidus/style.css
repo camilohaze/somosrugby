@@ -2784,7 +2784,6 @@ padding-top: 1.5em;
 	border-top:1px solid rgba(60,60,60,0.2);
 	background: url(img/bg-footer.jpg);
 	background-color: #000;
-	height: 70px;
 }
 
 .site-info {
@@ -3082,7 +3081,7 @@ p > video {
 }
 
 #menu-menu-principal > .current-menu-parent > .sub-menu > .current-menu-item {
-    border-bottom: 1px solid rgba(60,60,60,0.2);
+    border-bottom: 1px solid rgba(60,60,60,0.2);.site-footer
     border-image-source: url(img/shadow.png);
     border-image-slice: 60 50 0 35;
     border-image-width: 25px 60px 0px 25px
@@ -3094,13 +3093,16 @@ p > video {
 
 .logo {
 	width: 100%;
+	background: url(img/bg-footer.jpg);
+	text-align: center;
 }
 
 .logo-img {
-	background-image: url(img/banner.jpg);
-	background-size: 100% 100%;
-	width: 100%;
-	min-height: 320px;
+	/*background-image: url(img/cabezote.png);*/
+	/*background-size: 100% 100%;*/
+	width: 700px;
+	/*min-height: 320px;*/
+	height: auto;
 }
 
 .social {
@@ -3114,6 +3116,7 @@ p > video {
 	background-image: url(img/fondo.jpg);
 	background-size: 100%;
 	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 #page {
@@ -3217,6 +3220,11 @@ p > video {
 
 	blockquote > blockquote {
 		margin-left: 0;
+	}
+
+	.logo-img
+	{
+		width: 400px;
 	}
 
 	#page {
@@ -3985,15 +3993,20 @@ p > video {
 		margin-left: 1em;
 	}
 
+	.logo-img
+	{
+		width: 550px;
+	}
+
 	.bg-content {
 		background-image: url(img/m-fondo.jpg);
 		background-size: 100% 100%;
 	}
     
-    #content {
-        width: 84%;
+	#content {
+        	width: 84%;
 		margin: 0 auto;
-    }
+	}
 
 	#page {
 		width: 100%;
@@ -5450,4 +5463,9 @@ article > .entry-content div > p,h1,h2,h3,h4,h5,h6,a
 article > .entry-content a:hover
 {
 	color: #fff;
+}
+
+#click-menu
+{
+	display:none !important;
 }

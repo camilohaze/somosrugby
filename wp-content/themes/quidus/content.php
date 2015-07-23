@@ -6,9 +6,6 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-	<i class="fa fa-align-left post-mark"></i>
-	<div class="post-thumbnail"><?php quidus_post_thumbnail(); ?></div>
 	<header class="entry-header">
 		<?php
 			if ( is_single() ) :
@@ -46,22 +43,9 @@
 				'pagelink'    => '<span class="screen-reader-text">' . __( 'Page', 'quidus' ) . ' </span>%',
 				'separator'   => '<span class="screen-reader-text">, </span>',
 			) );
-			
-					// Author bio.
-		if ( is_single() && get_the_author_meta( 'description' ) ) :
-			get_template_part( 'author-bio' );
-		endif;
 	
 		if ( comments_open() || get_comments_number() ) :
 			comments_template();
-		endif;
-		
-		
-		if ( is_single() ) :
-			the_post_navigation( array(
-				'prev_text' => '<span class="post-title">%title</span>',
-				'next_text' => '<span class="post-title">%title</span>'
-			) );
 		endif;
 		?>
 	</div><!-- .entry-content -->
